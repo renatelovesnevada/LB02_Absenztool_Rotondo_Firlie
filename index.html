@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absenz Tool</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/java.js"></script>
 </head>
 <body>
+
+
+    <h1> Bildungszentrum
+        Zürichsee
+<div class="absenzen">
+        Absenzen
+    </h1>
+</div>
+    <!--Login-->
+
+    <form id="loginForm">
+        <h2>Einloggen</h2>
+
+    <label for="username">Benutzername:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Passwort:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button class="login" type="button" onclick="login()">Login</button>
+</form>
+
+
+
+    <form id="absenceForm" style="display: none;">
+<!--Decide your class options-->
+    <label for="class">Class:</label>
+    <select id="class" name="class" required>
+        <option value="me21a">ME21a</option>
+        <option value="me21b">ME21b</option>
+        <option value="me21c">ME21c</option>
+        <option value="me21d">ME21d</option>
+
+    <label for="date">Datum:</label>
+    <input type="date" id="date" name="date" required>
+
+        <label for="absenceStatus">Grund für Absenz:</label>
+        <select id="absenceStatus" name="absenceStatus" required>
+            <option value="present">Anwesend</option>
+            <option value="absent">Abwesend</option>
+            <option value="late">Verspätet</option>
+            <option value="approvedDispensation">Bewiligte Dispenz</option>
+            <option value="unapprovedDispensation">Nicht bewiligte Dispenz</option>
+            <option value="warned">Ermahnt</option>
+            <option value="teacherSick">Lehrperson ist Krank</option>
+
+        </select>
+
+        <!-- Add a comment-->
+        <label for="comment">Kommentar:</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+
+
+
+        <button type="button" onclick="logAbsence()">Abwesenheit protokollieren</button>
+        <button type="button" onclick="deleteAbsence()"> Abwesenheit Löschen</button>
+        <button type="button" onclick="viewAbsenceHistory()">Abwesenheitsverlauf ansehen</button>
+
+    </form>
 
 </body>
 </html>

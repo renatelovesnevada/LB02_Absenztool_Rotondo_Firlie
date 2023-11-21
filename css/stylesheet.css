@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0.8;
+    background: url('../img/backgroundimage.jpg'), lightgray 50% center/ contain no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    width: 852px;
+    height: 377px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
+    font-family: "Arial Black";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.absenzen{
+    color: #FFF;
+    font-family: "Arial Black";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+form {
+    box-sizing: border-box;
+    width: 833px;
+    height: 589px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #D9D9D9;
+    mix-blend-mode: hard-light;
+    align-items: center; /* Center the form horizontally */
+    justify-content: center; /* Center the form vertically */
+    margin-top: 20px;
+
+}
+
+h2 {
+    width: 100%; /*
+    /*width: 249px;*/
+    height: 95px;
+    flex-shrink: 0;
+    color: #537DE0;
+    text-align: center;
+    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
+    font-family: "Arial Black";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100%;
+   /* width: 249px;*/
+    height: 95px;
+    flex-shrink: 0;
+    color: #537DE0;
+    text-align: center;
+    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
+    font-family: "Arial Black";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+  /*  width: 772px; */
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+.login{
+    width: 100%;
+    /*
+    width: 249px;*/
+    height: 95px;
+    flex-shrink: 0;
+    color: #537DE0;
+    text-align: center;
+    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
+    font-family: "Arial Black";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 189px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
