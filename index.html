@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
     <h1> Bildungszentrum
         Zürichsee
 <div class="absenzen">
@@ -17,8 +16,8 @@
     </h1>
 </div>
     <!--Login-->
-
-    <form id="loginForm">
+    <div id="loginSection">
+        <form id="loginForm">
         <h2>Einloggen</h2>
 
     <label for="username">Benutzername:</label>
@@ -28,12 +27,26 @@
     <input type="password" id="password" name="password" required>
 
     <button class="login" type="button" onclick="login()">Login</button>
-</form>
+
+    </div>
+
+    </form>
+
+
+    <div id="optionsSection" class="options">
+        <button type="button" onclick="logAbsence()">Abwesenheit protokollieren</button>
+        <button type="button" onclick="deleteAbsence()"> Abwesenheit Löschen</button>
+        <button type="button" onclick="viewAbsenceHistory()">Abwesenheitsverlauf ansehen</button>
+    </div>
+
+
+</body>
+</html>
 
 
 
-    <form id="absenceForm" style="display: none;">
-<!--Decide your class options-->
+<!--<form id="absenceForm" style="display: none;">-->
+<!--Decide your class options
     <label for="class">Class:</label>
     <select id="class" name="class" required>
         <option value="me21a">ME21a</option>
@@ -56,17 +69,6 @@
 
         </select>
 
-        <!-- Add a comment-->
+
         <label for="comment">Kommentar:</label>
-        <textarea id="comment" name="comment" rows="4"></textarea>
-
-
-
-        <button type="button" onclick="logAbsence()">Abwesenheit protokollieren</button>
-        <button type="button" onclick="deleteAbsence()"> Abwesenheit Löschen</button>
-        <button type="button" onclick="viewAbsenceHistory()">Abwesenheitsverlauf ansehen</button>
-
-    </form>
-
-</body>
-</html>
+        <textarea id="comment" name="comment" rows="4"></textarea>-->

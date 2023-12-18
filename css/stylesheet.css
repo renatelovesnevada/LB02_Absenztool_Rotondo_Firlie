@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif !important;
     margin: 0;
     padding: 0;
     display: flex;
@@ -45,9 +45,19 @@ form {
     align-items: center; /* Center the form horizontally */
     justify-content: center; /* Center the form vertically */
     margin-top: 20px;
-
 }
-
+.options {
+    width: 833px;
+    height: 589px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #D9D9D9;
+    mix-blend-mode: hard-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 h2 {
     width: 100%; /*
     /*width: 249px;*/
@@ -63,7 +73,6 @@ h2 {
     line-height: normal;
     margin-bottom: 20px;
 }
-
 label {
     width: 100%;
    /* width: 249px;*/
@@ -89,7 +98,7 @@ input {
     background: #FFF;
     margin-bottom: 20px;
 }
-.login{
+.login {
     width: 100%;
     /*
     width: 249px;*/
@@ -104,6 +113,28 @@ input {
     font-weight: 400;
     line-height: normal;
     width: 189px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+button{
+    width: 100%;
+    /*
+    width: 249px;*/
+    height: 95px;
+    flex-shrink: 0;
+    color: #537DE0;
+    text-align: center;
+    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
+    font-family: "Arial Black";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
     height: 60px;
     flex-shrink: 0;
     border-radius: 40px;
