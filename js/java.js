@@ -3,31 +3,60 @@ function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Replace this with your actual login logic
+    // test data
     if (username === "your_username" && password === "your_password") {
         // Show the main form after successful login
         document.getElementById("loginForm").style.display = "none";
-        document.getElementById("absenceForm").style.display = "block";
+        document.getElementById("optionsSection").style.display = "flex";
     } else {
         alert('Ungültige Anmeldedaten. Bitte versuchen Sie es erneut.');
     }
 }
 
-function logAbsence() {
-    alert('Abwesenheit erfolgreich protokolliert!');
-}
-/*alert that absence is successful*/
-function deleteAbsence() {
-    alert('Abwesenheit erfolgreich Gelöscht!');
-}
-/*alert that absence deleted is successful*/
-function viewAbsenceHistory() {
-    alert('Abwesenheit am anzeigen...');
-}
-/*alert that absence is being viewed*/
 
-function logout() {
-    // Reset the forms and show the login form
-    document.getElementById("loginForm").style.display = "block";
-    document.getElementById("absenceForm").style.display = "none";
+// abwesenheit protokollieren, löschen ansehen
+
+function logAbsence() {
+    showActionContent("logAbsenceContent");
 }
+
+function deleteAbsence() {
+    showActionContent("deleteAbsenceContent");
+}
+
+function viewAbsenceHistory() {
+    showActionContent("viewHistoryContent");
+}
+
+
+//button go back
+function goBackToOptions() {
+    // Show the options section
+    document.getElementById("optionsSection").style.display = "flex";
+
+    // Hide all action contents
+    var actionContents = document.getElementsByClassName("action-content");
+    for (var i = 0; i < actionContents.length; i++) {
+        actionContents[i].style.display = "none";
+    }
+}
+
+
+function showActionContent(contentId) {
+    // Hide options section
+    document.getElementById("optionsSection").style.display = "none";
+
+    // Hide all action contents
+    var actionContents = document.getElementsByClassName("action-content");
+    for (var i = 0; i < actionContents.length; i++) {
+        actionContents[i].style.display = "none";
+    }
+
+    // Show the specific action content
+    document.getElementById(contentId).style.display = "block";
+}
+var goBackButton = document.getElementById("goBackButton");
+if (goBackButton) {
+    goBackButton.style.display = "block";
+}
+
