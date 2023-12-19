@@ -59,4 +59,16 @@ var goBackButton = document.getElementById("goBackButton");
 if (goBackButton) {
     goBackButton.style.display = "block";
 }
+//php
+// Function to fetch and display Absenz data
+function viewAbsenceHistory() {
+    // Make an asynchronous request to fetch data
+    fetch('fetch_data.php')
+        .then(response => response.json())
+        .then(data => {
+            // Handle the fetched data (you can update the UI here)
+            console.log(data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
 
