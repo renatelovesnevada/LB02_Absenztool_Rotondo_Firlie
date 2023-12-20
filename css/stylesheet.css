@@ -101,14 +101,9 @@ input {
     margin-bottom: 20px;
 }
 .login {
-    width: 100%;
-    /*
-    width: 249px;*/
-    height: 95px;
     flex-shrink: 0;
     color: #537DE0;
     text-align: center;
-    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
     font-family: "Arial Black";
     font-size: 30px;
     font-style: normal;
@@ -116,21 +111,15 @@ input {
     line-height: normal;
     width: 189px;
     height: 60px;
-    flex-shrink: 0;
     border-radius: 40px;
     background: #FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 button{
-    width: 100%;
-    /*
-    width: 249px;*/
-    height: 95px;
     flex-shrink: 0;
     color: #537DE0;
     text-align: center;
-    text-shadow: 10px 10px 50px rgba(0, 0, 0, 0.30);
     font-family: "Arial Black";
     font-size: 30px;
     font-style: normal;
@@ -138,7 +127,6 @@ button{
     line-height: normal;
     width: auto;
     height: 60px;
-    flex-shrink: 0;
     border-radius: 40px;
     background: #FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -160,6 +148,8 @@ button{
     justify-content: center;
     margin-top: 20px;
     position: relative;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .AbsenceTitle {
@@ -192,4 +182,52 @@ button{
 
 .goback svg {
     margin-right: 5px;
+}
+ #class {
+    width: 178px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+     text-align: center;
+}
+ #student{
+     width: 178px;
+     height: 60px;
+     flex-shrink: 0;
+     border-radius: 25px;
+     background: #FFF;
+     text-align: right;
+ }
+label[for="student"]{
+    margin-left: 205px !important;
+}
+#date{
+    width: 178px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    text-align: center;
+    margin-right: 500px !important;
+}
+#absenceStatus {
+    width: 680px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+#Kommentar {
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 584px;
+    height: 126px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+
 }
