@@ -63,7 +63,7 @@ INSERT INTO Login (loginID, PasswordID) VALUES
   (1, 'johns_password'),
  (2, 'alices_password'),
  (3, 'bobs_password');
-
+/*Test logins for teachers! - name of students as login just to test*/
 INSERT INTO Login (loginID, PasswordID) VALUES
                                             (5, 'lela_password'),
                                             (6, 'al_password'),
@@ -77,6 +77,7 @@ INSERT INTO Login (loginID, PasswordID) VALUES
 INSERT INTO Login (loginID, PasswordID) VALUES
 (10, 'Elena_password');
 
+/*STudents*/
 INSERT INTO Student (StudentID, Name, Nachname) VALUES
   (1, 'John', 'Doe'),
  (2, 'Alice', 'Smith'),
@@ -90,6 +91,7 @@ INSERT INTO Student (StudentID, Name, Nachname) VALUES
 (10, 'elena', 'rot'),
 (11,'artin', 'kar');
 /*Test for Demir*/
+
 INSERT INTO Student (StudentID, Name, Nachname) VALUES
     (4, 'Alessia', 'Rotondo');
 

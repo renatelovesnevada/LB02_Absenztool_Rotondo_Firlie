@@ -59,3 +59,19 @@ var goBackButton = document.getElementById("goBackButton");
 if (goBackButton) {
     goBackButton.style.display = "block";
 }
+
+//Absence protokollieren
+function validateAndSubmit() {
+    // Perform your client-side validation here
+    var classInput = document.getElementById('class').value;
+    var studentInput = document.getElementById('student').value;
+    // Add more validation as needed...
+
+    // If validation passes, submit the form
+    if (classInput && studentInput) {
+        document.getElementById('logAbsenceForm').submit();
+    } else {
+        // Display an error message or take appropriate action
+        alert('Please fill in all required fields.');
+    }
+}

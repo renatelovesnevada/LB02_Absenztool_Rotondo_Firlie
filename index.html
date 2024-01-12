@@ -36,6 +36,7 @@
     </div>
 
 <!-- Abwesenheit protokollieren, löschen, ansehen--->
+   <!-- <form id="logAbsenceForm" action="insert.php" method="post">  </form> didnt work -->
     <div id="logAbsenceContent" class="action-content">
         <!-- go back button-->
         <button class="goback" onclick="goBackToOptions()">
@@ -57,9 +58,25 @@
             <label for="student">Name:</label>
             <input type="text" id="student" name="student" required>
                 <!--Datum-->
+
                 <label for="date">Datum:</label>
                 <input type="date" id="date" name="date" required>
-
+<!---abteilung--->
+        <div class="Abteilungbutton">
+        <label for="Abteilung">Abteilung:</label>
+        <select id="Abteilung" name="Abteilung" required>
+            <option value="Mathematics">Mathe</option>
+            <option value="Science">Wissenschaft</option>
+            <option value="English">Englisch</option>
+            <option value="Programming">Programmieren</option>
+            <option value="German>">Deutsch</option>
+            <option value="Film">Film</option>
+            <option value="Photography">Photografie</option>
+            <option value="Sport">Sport</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Layout Design">Layout Design</option>
+        </select>
+    </div>
                 <!-- reasoning-->
                 <label for="absenceStatus">Grund:</label>
                 <select id="absenceStatus" name="absenceStatus" required>
@@ -77,7 +94,7 @@
                 <!--kommentar-->
                 <label for="Kommentar">Kommentar:</label>
                 <textarea id="Kommentar" name="Kommentar" rows="4" cols="50"></textarea>
-        <button id="protokollieren" class="action-button" type="button" onclick="protokollierenButton()">Protokollieren</button>
+        <button id="protokollieren" class="action-button" type="button" onclick="validateAndSubmit()">Protokollieren</button>
     </div>
 
     <div id="deleteAbsenceContent" class="action-content">
@@ -102,9 +119,24 @@
             <label for="student">Name:</label>
             <input type="text" id="student" name="student" required>
                 <!--Datum-->
+
                 <label for="date">Datum:</label>
                 <input type="date" id="date" name="date" required>
-
+        <div class="Abteilungbutton">
+            <label for="Abteilung">Abteilung:</label>
+            <select id="Abteilung" name="Abteilung" required>
+                <option value="Mathematics">Mathe</option>
+                <option value="Science">Wissenschaft</option>
+                <option value="English">Englisch</option>
+                <option value="Programming">Programmieren</option>
+                <option value="German>">Deutsch</option>
+                <option value="Film">Film</option>
+                <option value="Photography">Photografie</option>
+                <option value="Sport">Sport</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Layout Design">Layout Design</option>
+            </select>
+        </div>
                 <!-- reasoning-->
                 <label for="absenceStatus">Grund:</label>
                 <select id="absenceStatus" name="absenceStatus" required>
@@ -119,6 +151,7 @@
                     <option value="Sport Obligation">Sportverpflichtung</option>
                     <option value="External Training">Externe Ausbildung</option>
                 </select>
+
                 <!--kommentar-->
                 <label for="Kommentar">Kommentar:</label>
                 <textarea id="Kommentar" name="Kommentar" rows="4" cols="50"></textarea>

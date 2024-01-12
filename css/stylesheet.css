@@ -201,7 +201,7 @@ button{
      background: #FFF;
      text-align: right;
  }
-label[for="student"]{
+label[for="student"] {
     margin-left: 205px !important;
 }
 #date{
@@ -211,7 +211,6 @@ label[for="student"]{
     border-radius: 25px;
     background: #FFF;
     text-align: center;
-    margin-right: 500px !important;
 }
 #absenceStatus {
     width: 680px;
@@ -248,4 +247,18 @@ label[for="student"]{
     position: relative;
     padding-left: 10px !important;
     padding-right: 10px !important;
+}
+
+#Abteilung {
+    width: 178px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.Abteilungbutton {
+    margin-left: 450px;
+    margin-top: -80px;
+    margin-bottom: 33px;
 }
