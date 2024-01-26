@@ -2,6 +2,8 @@ create database M290LB02;
 create database Absenzensystem;
 show databases;
 use Absenzensystem;
+use appDB;
+
 
 CREATE TABLE Begründung (
                             GrundID INT PRIMARY KEY,
@@ -126,11 +128,12 @@ INSERT INTO Abteilung (AbteilungID, AbteilungName, Lehrperson) VALUES
     (10, 'Marketing Design', 'Mr.Lol')
     ;
 
-INSERT Into Absenz (AbsenzID, date, AbsenzStatus, GrundID, AbteilungID, LoginID, StudentID)  values (1,'01.12.2023','abwesend',1,2,2,2);
-INSERT Into Absenz (AbsenzID, date, AbsenzStatus, GrundID, AbteilungID, LoginID, StudentID)  values (2,'11.12.2023','abwesend',1,2,3,3);
-INSERT Into Absenz (AbsenzID, date, AbsenzStatus, GrundID, AbteilungID, LoginID, StudentID)  values (3,'13.12.2023','abwesend',3,2,2,2);
+INSERT Into Absenz (AbsenzID, date, GrundID, AbteilungID, LoginID, StudentID)  values (1,'01.12.2023','abwesend',1,2,2,2);
+INSERT Into Absenz (AbsenzID, date, GrundID, AbteilungID, LoginID, StudentID)  values (2,'11.12.2023','abwesend',1,2,3,3);
+INSERT Into Absenz (AbsenzID, date, GrundID, AbteilungID, LoginID, StudentID)  values (3,'13.12.2023','abwesend',3,2,2,2);
 /*Test for Demir*/
-INSERT Into Absenz (AbsenzID, date, AbsenzStatus, GrundID, AbteilungID, LoginID, StudentID)  values (4,'25.12.2023','Late',4,4,5,5);
+INSERT Into Absenz (AbsenzID, date, GrundID, AbteilungID, LoginID, StudentID)  values (4,'25.12.2023',4,4,5,5);
+INSERT Into Absenz (AbsenzID, date, GrundID, AbteilungID, LoginID, StudentID)  values (6,'2024-11-20',1,10,10,10);
 
 /*Test for Demir update alessia absenz*/
 UPDATE Absenz
@@ -179,3 +182,13 @@ where GrundID = 5;
 
 DELETE from Login
 where loginID = 10;
+select current_date;;
+
+CREATE USER  'appAdmin'@'localhost' IDENTIFIED BY'appAdminPW';
+ALTER USER 'appAdmin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'appAdminPW';
+
+SELECT user FROM mysql.user;
+
+SHOW GRANTS FOR appAdmin@localhost;
+
+GRANT all privileges ON Absenzsystem.* TO 'appAdmin'@'localhost';
