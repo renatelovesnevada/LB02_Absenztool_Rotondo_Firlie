@@ -192,3 +192,4 @@ SELECT user FROM mysql.user;
 SHOW GRANTS FOR appAdmin@localhost;
 
 GRANT all privileges ON Absenzsystem.* TO 'appAdmin'@'localhost';
+/*code finished*/
